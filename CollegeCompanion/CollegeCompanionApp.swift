@@ -1,17 +1,17 @@
-//
-//  CollegeCompanionApp.swift
-//  CollegeCompanion
-//
-//  Created by Natasha Strongosky on 5/20/25.
-//
-
 import SwiftUI
+import Firebase
 
 @main
 struct CollegeCompanionApp: App {
+    // Initialize Firebase when the app launches
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
+
